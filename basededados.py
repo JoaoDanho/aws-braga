@@ -4,7 +4,7 @@ import sys
 
 servidor = sys.argv[1]
 user = sys.argv[2]
-password = "******" 
+password = "0123" 
 
 print(f"o servidor é {servidor}")
 print(f"o user chama-se {user}")
