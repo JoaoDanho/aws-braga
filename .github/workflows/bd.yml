@@ -8,22 +8,20 @@ on:
 
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+   workflow_dispatch:
     inputs:
-      ambiente:
-        type: environment
-
-        servidor:
-          default: AWS
-          required: true
-
-        user:
-          default: user1
-          required: true
-
-        password:
-          default: 0123
-          required: true
+      servidor:
+        description: 'Servidor de destino'
+        required: true
+        default: 'AWS'
+      user:
+        description: 'Utilizador da base de dados'
+        required: true
+        default: 'user1'
+      password:
+        description: 'Password da base de dados'
+        required: true
+        default: '0123'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
